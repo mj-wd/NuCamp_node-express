@@ -39,7 +39,7 @@ promotionRouter.route('/:promotionId')
     res.end(`Will update the promotions: ${req.body.name} with description: ${req.body.description}`);
 })
 .delete((req, res) => {
-    res.end(`Deleting promotions: ${req.params.promotionId}`);
+    res.end(`Deleting promotion: ${req.params.promotionId}`);
 });
 
 module.exports = promotionRouter;

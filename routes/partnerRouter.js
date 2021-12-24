@@ -39,7 +39,7 @@ partnerRouter.route('/:partnerId')
     res.end(`Will update the partners: ${req.body.name} with description: ${req.body.description}`);
 })
 .delete((req, res) => {
-    res.end(`Deleting partners: ${req.params.partnerId}`);
+    res.end(`Deleting partner: ${req.params.partnerId}`);
 });
 
 module.exports = partnerRouter;
